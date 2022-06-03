@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quizz</string>
+    <string name="highscore_0">Highscore: 0</string>
+</resources>
