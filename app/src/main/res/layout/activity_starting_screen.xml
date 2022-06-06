@@ -41,21 +41,29 @@
         android:textColor="#FFFFFF"
         android:background="@drawable/round_back_blue1000"
         />
+
     <Spinner
         android:id="@+id/spinner_category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:dropDownVerticalOffset="45dp"
         android:layout_below="@+id/button_start_quiz"
         android:layout_alignStart="@+id/button_start_quiz"
+        android:background="@drawable/style_spinner"
         android:layout_marginTop="16dp"
-        />
+        android:padding="10dp"
+         />
     <Spinner
         android:id="@+id/spinner_difficulty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:dropDownVerticalOffset="45dp"
         android:layout_below="@+id/spinner_category"
         android:layout_alignStart="@+id/button_start_quiz"
         android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@drawable/style_spinner"
         />
+
 
 </RelativeLayout>
