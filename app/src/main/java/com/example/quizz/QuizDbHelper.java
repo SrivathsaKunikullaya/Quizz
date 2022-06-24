@@ -86,29 +86,121 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("Programming, Easy: A is correct",
-                "A", "B", "C","D", 1, Question.DIFFICULTY_EASY,Category.PROGRAMMING);
+        Question q1 = new Question("father of c programming language",
+                "Dennis Ritchie", "Bjarne Stroustrup", "James Gosling","Rasmus Lerdorf", 1, Question.DIFFICULTY_EASY,Category.PROGRAMMING);
         addQuestion(q1);
-        Question q2 = new Question("Geography, Medium: B is correct",
-                "A", "B", "C","D", 2,
-                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+
+        Question q2 = new Question("What is the full form of IBM ?",
+                "Indian Beta Machine", "International Business Machine", "Integral Business Machine","Internal Beta Machine", 2, Question.DIFFICULTY_EASY,Category.PROGRAMMING);
         addQuestion(q2);
-        Question q3 = new Question("Math, Hard: C is correct",
-                "A", "B", "C","D", 3,
-                Question.DIFFICULTY_HARD, Category.MATH);
+
+        Question q3 = new Question("What is an operating system?",
+                "interface between the hardware and application programs", " collection of programs that manages hardware resources", "system service provider to the application programs","all of the mentioned", 4, Question.DIFFICULTY_MEDIUM,Category.PROGRAMMING);
         addQuestion(q3);
-        Question q4 = new Question("Math, Easy: A is correct",
-                "A", "B", "C","D", 1,
-                Question.DIFFICULTY_EASY, Category.MATH);
+
+        Question q4 = new Question(" A _______ is the physical path over which a message travels.",
+                "Path", "Medium", "Protocol","Route", 2, Question.DIFFICULTY_EASY,Category.PROGRAMMING);
         addQuestion(q4);
-        Question q5 = new Question("Non existing, Easy: A is correct",
-                "A", "B", "C","D", 4,
-                Question.DIFFICULTY_EASY, 4);
+
+        Question q5 = new Question("What is the full form of DBMS?",
+                "Data of Binary Management System", "Database Management System", "Database Management Service","Data Backup Management System", 2,
+                Question.DIFFICULTY_EASY, Category.PROGRAMMING);
         addQuestion(q5);
-        Question q6 = new Question("Non existing, Medium: B is correct",
-                "A", "B", "C","D", 2,
-                Question.DIFFICULTY_MEDIUM, 5);
+
+        Question q6 = new Question("Which of the following error can a compiler check?",
+                "Syntax Error", "Logical Error", "Both Logical and Syntax Error"," Compiler cannot check errors", 1,
+                Question.DIFFICULTY_MEDIUM, Category.PROGRAMMING);
         addQuestion(q6);
+
+        Question q7 = new Question("Which of the following computer language is written in binary codes only?",
+                "pascal", "machine language", "C","C#", 2,
+                Question.DIFFICULTY_MEDIUM, Category.PROGRAMMING);
+        addQuestion(q7);
+
+        Question q8 = new Question("Which of the following is a type of computer architecture?",
+                "Microarchitecture", "Harvard Architecture", " Von-Neumann Architecture","All of the mentioned", 4,
+                Question.DIFFICULTY_MEDIUM, Category.PROGRAMMING);
+        addQuestion(q8);
+
+        Question q9 = new Question("Who is the father of Software Engineering?",
+                "Margaret Hamilton", "Watts S. Humphrey", "Alan Turing","Boris Beizer", 2,
+                Question.DIFFICULTY_HARD, Category.PROGRAMMING);
+        addQuestion(q9);
+
+        Question q10 = new Question("What is the best case and worst case complexity of ordered linear search?",
+                " O(nlogn), O(logn)", "O(logn), O(nlogn)", "O(1), O(n)","O(n), O(1)", 3,
+                Question.DIFFICULTY_HARD, Category.PROGRAMMING);
+        addQuestion(q10);
+
+        Question q11 = new Question("Dijkstra’s Algorithm is used to solve _____________ problems.",
+                " All pair shortest path", " Single source shortest path", "Network flow","Sorting", 2,
+                Question.DIFFICULTY_HARD, Category.PROGRAMMING);
+        addQuestion(q11);
+
+        Question q12 = new Question("Which of the following are transport layer protocols used in networking?",
+                " TCP and FTP", " UDP and HTTP", "TCP and UDP"," HTTP and FTP", 3,
+                Question.DIFFICULTY_HARD, Category.PROGRAMMING);
+        addQuestion(q12);
+
+        Question q13 = new Question("The landmass of which of the following continents is the least?",
+                " Africa", " Asia", "Australia"," Europe", 3,
+                Question.DIFFICULTY_EASY, Category.GEOGRAPHY);
+        addQuestion(q13);
+
+        Question q14 = new Question("The Capital of USA?",
+                "New York", "Miami", "Las Vegas","Washington D.C", 4,
+                Question.DIFFICULTY_EASY, Category.GEOGRAPHY);
+        addQuestion(q14);
+
+        Question q15 = new Question("The largest country in the world?",
+                "Russia", "Canada", "USA","China", 1,
+                Question.DIFFICULTY_EASY, Category.GEOGRAPHY);
+        addQuestion(q15);
+
+        Question q16 = new Question("Most spoken language in the world?",
+                "Mandarin chinese", "English", "Hindi","Spanish", 2,
+                Question.DIFFICULTY_EASY, Category.GEOGRAPHY);
+        addQuestion(q16);
+
+        Question q17 = new Question("Largest desert in the world?",
+                "Antarctic Desert", "Arctic Desert", "Sahara Desert","Great Australian", 1,
+                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+        addQuestion(q17);
+
+        Question q18 = new Question("Smallest country int the world?",
+                "Nauru", "Tuvalu", "Vatican City","Palau", 3,
+                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+        addQuestion(q18);
+
+        Question q19 = new Question("The biggest island in the world?",
+                "Madagascar", "New Guinea", "Greenland","Sumatra", 3,
+                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+        addQuestion(q19);
+
+        Question q20 = new Question("The longest river in the world?",
+                "Nile", "Amazon", "Mississippi","Yangtze", 2,
+                Question.DIFFICULTY_MEDIUM, Category.GEOGRAPHY);
+        addQuestion(q20);
+
+        Question q21 = new Question("The Total number of time zones in China?",
+                "1", "9", "4","3", 1,
+                Question.DIFFICULTY_HARD, Category.GEOGRAPHY);
+        addQuestion(q21);
+
+        Question q22 = new Question("Which of the following forms outermost solid part of the earth?",
+                "Core", "Mantle", " Magma","Crust", 4,
+                Question.DIFFICULTY_HARD, Category.GEOGRAPHY);
+        addQuestion(q22);
+
+        Question q23 = new Question("Which among the following Volcanoes is not an active volcano?",
+                "Mt. Vesuvius", "Mt. Etna", "Mt. Kilimanjaro","Mauna Kea", 3,
+                Question.DIFFICULTY_HARD, Category.GEOGRAPHY);
+        addQuestion(q23);
+
+        Question q24 = new Question("What percent of the total surface area of the Earth does the tropical rainforest biome cover?",
+                "25%", "50%", "2%","10%", 3,
+                Question.DIFFICULTY_HARD, Category.GEOGRAPHY);
+        addQuestion(q24);
     }
 
     private void addQuestion(Question question) {
