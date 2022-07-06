@@ -75,8 +75,6 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addCategory(c1);
         Category c2 = new Category("Geography");
         addCategory(c2);
-        Category c3 = new Category("Math");
-        addCategory(c3);
     }
 
     private void addCategory(Category category) {
